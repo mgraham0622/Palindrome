@@ -17,6 +17,7 @@ int strip(char* input){
     if(isalnum(ch2)){
       ch2 = tolower(ch2));
       ch1 = static_cast<char>(ch2);
+      strcat(temp,ch1);
     }
   }
   strcpy(temp,input);
