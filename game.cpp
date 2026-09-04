@@ -47,7 +47,7 @@ int main(){
   strip(input);
   strcpy(reversed,input);
   reverse(reversed);
-  if (strcmp(input,reverse) == 0){
+  if (!strcmp(input,reversed)){
     cout << dialogue1 << endl;
   } else {
     cout << dialogue2 << endl;
