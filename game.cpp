@@ -11,7 +11,7 @@ int strip(char (& input)[81]){
   char ch1;
   unsigned char ch2;
   length = strlen(input);
-  for (int i; i < length; i++){
+  for (int i = 0; i < length; i++){
     ch1 = input[i];
     ch2 = static_cast<unsigned char>(ch1);
     if(isalnum(ch2)){
@@ -29,7 +29,7 @@ int reverse(char (& input)[81]){
   int length;
   
   length = strlen(input);
-  for (int i; i <= length; i++){
+  for (int i = 0; i <= length; i++){
       strncat(temp,&(input[length-i]),1);
     }
   }
