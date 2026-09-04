@@ -31,7 +31,6 @@ int reverse(char (& input)[81]){
   length = strlen(input);
   for (int i = 0; i <= length; i++){
       strncat(temp,&(input[length-i]),1);
-    }
   }
   strcpy(input,temp);
   return 0;
