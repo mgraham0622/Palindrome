@@ -15,7 +15,7 @@ int strip(char (& input)[81]){
     ch1 = input[i];
     ch2 = static_cast<unsigned char>(ch1);
     if(isalnum(ch2)){
-      ch2 = tolower(ch2));
+      ch2 = tolower(ch2);
       ch1 = static_cast<char>(ch2);
       strncat(temp,&ch1,1);
     }
